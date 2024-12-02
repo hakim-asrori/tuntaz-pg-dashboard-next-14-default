@@ -1,0 +1,15 @@
+/* CSS Vendor Template Tabler */
+@import "../../node_modules/@tabler/core/dist/css/tabler.css";
+@import "../../node_modules/@tabler/core/dist/css/tabler-flags.css";
+@import "../../node_modules/@tabler/core/dist/css/tabler-payments.css";
+@import "../../node_modules/@tabler/core/dist/css/tabler-vendors.css";
+@import "../../node_modules/@tabler/core/dist/css/demo.css";
+
+@import url("https://rsms.me/inter/inter.css");
+:root {
+  --tblr-font-sans-serif: "Inter Var", -apple-system, BlinkMacSystemFont,
+    San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+}
+body {
+  font-feature-settings: "cv03", "cv04", "cv11";
+}
