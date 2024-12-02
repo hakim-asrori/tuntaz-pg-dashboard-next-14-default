@@ -6,15 +6,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={``}>
-        <div className="page">
-          <Header />
-          <Navbar />
-
-          <div className="page-wrapper">
-            {children}
-            <Footer />
-          </div>
-        </div>
+        {children}
 
         <Script src="/assets/js/demo-theme.min.js" />
         <Script src="/assets/js/tabler.min.js" />

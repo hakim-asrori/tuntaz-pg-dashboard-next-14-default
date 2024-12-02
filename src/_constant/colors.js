@@ -1,0 +1,1 @@
+export const TGREEN = "#39827E";

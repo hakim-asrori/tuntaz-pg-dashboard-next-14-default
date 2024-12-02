@@ -53,8 +53,8 @@ const Invoices = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
                     stroke-linejoin="round"
                     className="icon icon-sm icon-thick"
                   >
@@ -84,7 +84,7 @@ const Invoices = () => {
                   <span className="text-secondary">001401</span>
                 </td>
                 <td>
-                  <a href="invoice.html" className="text-reset" tabindex="-1">
+                  <a href="invoice.html" className="text-reset" tabIndex="-1">
                     Design Works
                   </a>
                 </td>
@@ -132,7 +132,7 @@ const Invoices = () => {
                   <span className="text-secondary">001402</span>
                 </td>
                 <td>
-                  <a href="invoice.html" className="text-reset" tabindex="-1">
+                  <a href="invoice.html" className="text-reset" tabIndex="-1">
                     UX Wireframes
                   </a>
                 </td>
@@ -180,7 +180,7 @@ const Invoices = () => {
                   <span className="text-secondary">001403</span>
                 </td>
                 <td>
-                  <a href="invoice.html" className="text-reset" tabindex="-1">
+                  <a href="invoice.html" className="text-reset" tabIndex="-1">
                     New Dashboard
                   </a>
                 </td>
@@ -228,7 +228,7 @@ const Invoices = () => {
                   <span className="text-secondary">001404</span>
                 </td>
                 <td>
-                  <a href="invoice.html" className="text-reset" tabindex="-1">
+                  <a href="invoice.html" className="text-reset" tabIndex="-1">
                     Landing Page
                   </a>
                 </td>
@@ -277,7 +277,7 @@ const Invoices = () => {
                   <span className="text-secondary">001405</span>
                 </td>
                 <td>
-                  <a href="invoice.html" className="text-reset" tabindex="-1">
+                  <a href="invoice.html" className="text-reset" tabIndex="-1">
                     Marketing Templates
                   </a>
                 </td>
@@ -325,7 +325,7 @@ const Invoices = () => {
                   <span className="text-secondary">001406</span>
                 </td>
                 <td>
-                  <a href="invoice.html" className="text-reset" tabindex="-1">
+                  <a href="invoice.html" className="text-reset" tabIndex="-1">
                     Sales Presentation
                   </a>
                 </td>
@@ -374,7 +374,7 @@ const Invoices = () => {
                   <span className="text-secondary">001407</span>
                 </td>
                 <td>
-                  <a href="invoice.html" className="text-reset" tabindex="-1">
+                  <a href="invoice.html" className="text-reset" tabIndex="-1">
                     Logo & Print
                   </a>
                 </td>
@@ -422,7 +422,7 @@ const Invoices = () => {
                   <span className="text-secondary">001408</span>
                 </td>
                 <td>
-                  <a href="invoice.html" className="text-reset" tabindex="-1">
+                  <a href="invoice.html" className="text-reset" tabIndex="-1">
                     Icons
                   </a>
                 </td>
@@ -471,7 +471,7 @@ const Invoices = () => {
             <a
               className="page-link"
               href="#"
-              tabindex="-1"
+              tabIndex="-1"
               aria-disabled="true"
             >
               <svg
@@ -481,8 +481,8 @@ const Invoices = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 className="icon"
               >
@@ -527,9 +527,9 @@ const Invoices = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="icon"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
