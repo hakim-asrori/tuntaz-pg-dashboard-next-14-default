@@ -13,10 +13,17 @@
     "@coreui/react": "^5.4.1",
     "@tabler/core": "^1.0.0-beta21",
     "apexcharts": "^4.1.0",
+    "axios": "^1.7.8",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "js-cookie": "^3.0.5",
+    "moment": "^2.30.1",
     "next": "^14.2.18",
     "react": "^18.3.1",
     "react-apexcharts": "^1.6.0",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-toastify": "^10.0.6",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "postcss": "^8",

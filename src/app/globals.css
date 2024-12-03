@@ -4,12 +4,72 @@
 @import "../../node_modules/@tabler/core/dist/css/tabler-payments.css";
 @import "../../node_modules/@tabler/core/dist/css/tabler-vendors.css";
 @import "../../node_modules/@tabler/core/dist/css/demo.css";
+@import "../../node_modules/react-toastify/dist/ReactToastify.css";
 
 @import url("https://rsms.me/inter/inter.css");
 :root {
   --tblr-font-sans-serif: "Inter Var", -apple-system, BlinkMacSystemFont,
     San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+  --t-color-primary: 57, 130, 126;
 }
 body {
   font-feature-settings: "cv03", "cv04", "cv11";
+}
+
+.t__bg-primary {
+  --tblr-bg-opacity: 1;
+  background-color: rgba(
+    var(--t-color-primary),
+    var(--tblr-bg-opacity)
+  ) !important;
+}
+
+.t__btn-primary {
+  --tblr-btn-border-color: transparent;
+  --tblr-btn-hover-border-color: transparent;
+  --tblr-btn-active-border-color: transparent;
+  --tblr-btn-color: var(--tblr-primary-fg);
+  --tblr-btn-bg: rgba(var(--t-color-primary), 1);
+  --tblr-btn-hover-color: var(--tblr-primary-fg);
+  --tblr-btn-hover-bg: rgba(var(--t-color-primary), 0.8);
+  --tblr-btn-active-color: var(--tblr-primary-fg);
+  --tblr-btn-active-bg: rgba(var(--t-color-primary), 0.8);
+  --tblr-btn-disabled-bg: rgba(var(--t-color-primary), 1);
+  --tblr-btn-disabled-color: var(--tblr-primary-fg);
+  --tblr-btn-box-shadow: var(--tblr-box-shadow-input);
+}
+
+.t__btn-outline-primary {
+  --tblr-btn-color: rgba(var(--t-color-primary), 1);
+  --tblr-btn-bg: transparent;
+  --tblr-btn-border-color: rgba(var(--t-color-primary), 1);
+  --tblr-btn-hover-color: var(--tblr-primary-fg);
+  --tblr-btn-hover-border-color: transparent;
+  --tblr-btn-hover-bg: rgba(var(--t-color-primary), 1);
+  --tblr-btn-active-color: var(--tblr-primary-fg);
+  --tblr-btn-active-bg: rgba(var(--t-color-primary), 1);
+  --tblr-btn-disabled-color: rgba(var(--t-color-primary), 1);
+  --tblr-btn-disabled-border-color: rgba(var(--t-color-primary), 1);
+}
+
+.t__loading-section {
+  /* style="position:absolute; z-index: 99;" */
+  position: absolute;
+  transition: all 0.5s ease-in;
+  transition-duration: 2s;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(1.5px);
+  background-color: rgba(244, 244, 244, 0.15);
+  overflow: hidden;
+  margin: auto;
+}
+
+.t__custom-loading-circle {
+  display: inline-block;
 }

@@ -55,7 +55,7 @@ const Invoices = () => {
                     stroke="currentColor"
                     strokeWidth="2"
                     strokeLinecap="round"
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                     className="icon icon-sm icon-thick"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -483,7 +483,7 @@ const Invoices = () => {
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
-                stroke-linejoin="round"
+                strokeLinejoin="round"
                 className="icon"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
