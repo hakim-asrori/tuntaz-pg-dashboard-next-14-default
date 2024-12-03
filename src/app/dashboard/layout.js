@@ -1,3 +1,4 @@
+import { Layout } from "@/_components/dashboard";
 import { Footer, Header, Navbar } from "@/_components/layout";
 import { CODE, SERVICE } from "@/_constant/api";
 // import axios from "axios";
@@ -39,7 +40,7 @@ export default function DashboardLayout({ children }) {
   // }, []);
 
   return (
-    <div className="page">
+    <Layout>
       <Header />
       <Navbar />
 
@@ -47,6 +48,6 @@ export default function DashboardLayout({ children }) {
         {children}
         <Footer />
       </div>
-    </div>
+    </Layout>
   );
 }

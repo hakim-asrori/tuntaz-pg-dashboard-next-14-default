@@ -10,6 +10,7 @@ import SosmedTraffic from "./sosmedTraffic";
 import Tasks from "./Tasks";
 import HeaderButtons from "./headerButtons";
 import Invoices from "./invoices";
+import Layout from "./layout";
 
 export {
   IncomeCount,
@@ -24,4 +25,5 @@ export {
   Tasks,
   HeaderButtons,
   Invoices,
+  Layout,
 };
