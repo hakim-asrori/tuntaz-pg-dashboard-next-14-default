@@ -8,14 +8,23 @@ export function middleware(request) {
   const currentPath = new URL(request.url).pathname;
 
   if (!token && currentPath !== "/sign") {
-    return NextResponse.redirect(new URL("/sign", request.url));
+    const response = NextResponse.redirect(new URL("/sign", request.url));
+    return response;
+  }
+
+  if (token && !token.value) {
+    const response = NextResponse.redirect(new URL("/sign", request.url));
+    response.cookies.delete("TTPG");
+    return response;
   }
 
   if (token && ["/sign", "/sign/in", "/sign/up", "/"].includes(currentPath)) {
-    return NextResponse.redirect(new URL("/dashboard", request.url));
+    const response = NextResponse.redirect(new URL("/dashboard", request.url));
+    return response;
   }
 
-  return NextResponse.next();
+  const response = NextResponse.next();
+  return response;
 }
 
 export const config = {
