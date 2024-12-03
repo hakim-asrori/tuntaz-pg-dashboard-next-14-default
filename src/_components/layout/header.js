@@ -1,9 +1,57 @@
 "use client";
 
 import Avatar from "@/_assets/static/avatars/000m.jpg";
+import { SERVICE } from "@/_constant/api";
+import { generateSignature } from "@/_constant/global";
 import { CContainer } from "@coreui/react";
+import axios from "axios";
+import Cookies from "js-cookie";
+import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 const Header = ({ props, router }) => {
+  const $router = useRouter();
+
+  const onLogout = async (event) => {
+    event.preventDefault();
+
+    const secret = await generateSignature(SERVICE.AUTH.LOGOUT);
+
+    try {
+      let response = await axios.post(
+        SERVICE.AUTH.LOGOUT,
+        {},
+        {
+          headers: {
+            "x-signature": secret.signature,
+            "x-timestamp": secret.timestamp,
+            Authorization: Cookies.get("TTPG"),
+          },
+        }
+      );
+
+      if (response.data.status == CODE.ERROR) {
+        toast.error(response.data.message, {
+          autoClose: 3000,
+        });
+      } else {
+        Cookies.remove("TTPG");
+        $router.push("/sign/in");
+
+        toast.success(response.data.message, {
+          autoClose: 3000,
+        });
+      }
+    } catch (error) {
+      Cookies.remove("TTPG");
+      $router.push("/sign/in");
+
+      toast.success("success logout", {
+        autoClose: 3000,
+      });
+    }
+  };
+
   return (
     <header className="navbar navbar-expand-md d-print-none">
       <CContainer xl>
@@ -361,7 +409,7 @@ const Header = ({ props, router }) => {
               <a href="./settings.html" className="dropdown-item">
                 Settings
               </a>
-              <a href="./sign-in.html" className="dropdown-item">
+              <a href="/#" onClick={onLogout} className="dropdown-item">
                 Logout
               </a>
             </div>
