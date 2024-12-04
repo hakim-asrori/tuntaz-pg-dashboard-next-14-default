@@ -20,9 +20,17 @@ import Hook from "./in/hook";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 import { useEffect } from "react";
+import { MENU_THEME } from "@/_constant/global";
 
 export default function Page({ props }) {
   const { state, handler } = Hook(props);
+
+  useEffect(() => {
+    const menuTheme = Cookies.get("menu-theme");
+    if (!menuTheme) {
+      Cookies.set("menu-theme", MENU_THEME.NAVBAR);
+    }
+  }, []);
 
   return (
     <CForm

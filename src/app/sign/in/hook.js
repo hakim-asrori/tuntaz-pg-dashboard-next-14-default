@@ -65,7 +65,8 @@ const Hook = (props) => {
             } else {
               // Acronym From Token Tuntaz Payment Gateway
               Cookies.set("TTPG", response.data.token);
-              $router.push("/dashboard");
+              // $router.push("/dashboard");
+              window.location.href = "/dashboard";
 
               setIsLoading(false);
 

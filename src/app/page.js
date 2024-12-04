@@ -6,8 +6,6 @@ import { CContainer } from "@coreui/react";
 import WavesSvg from "@/_assets/images/svg/waves.svg";
 
 export default function Page() {
-  localStorage.setItem("nav-theme", "navbar");
-
   return (
     <Flex className={"flex-column h-100"}>
       <div className="page page-center z-3">

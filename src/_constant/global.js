@@ -14,6 +14,11 @@ export const ROLES = {
   INDIVIDUAL: 2,
 };
 
+export const MENU_THEME = {
+  SIDEBAR: "sidebar",
+  NAVBAR: "navbar",
+};
+
 export const handleChangeEl = async (
   _key,
   _e,
