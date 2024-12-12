@@ -11,6 +11,14 @@ import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import LogoTuntas from "@/_assets/images/logo/logo-tuntaz.png";
 import Image from "next/image";
+import Link from "next/link";
+import {
+  BankBuilding,
+  Information,
+  LockPassword,
+  Logout,
+  Setting,
+} from "./menuSvg";
 
 const Header = ({ props, router }) => {
   const $router = useRouter();
@@ -396,21 +404,32 @@ const Header = ({ props, router }) => {
               </div>
             </a>
             <div className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-              <a href="#" className="dropdown-item">
-                Status
-              </a>
-              <a href="./profile.html" className="dropdown-item">
-                Profile
-              </a>
-              <a href="#" className="dropdown-item">
-                Feedback
-              </a>
+              <Link href="/dashboard/profile" className="dropdown-item">
+                <Information />{" "}
+                <span className="ms-2">Information Personal</span>
+              </Link>
+              <Link
+                href="/dashboard/profile/business"
+                className="dropdown-item"
+              >
+                <Information />{" "}
+                <span className="ms-2">Information Business</span>
+              </Link>
+              <Link href="/dashboard/profile/bank" className="dropdown-item">
+                <BankBuilding /> <span className="ms-2">Bank Information</span>
+              </Link>
+              <Link
+                href="/dashboard/profile/change-password"
+                className="dropdown-item"
+              >
+                <LockPassword /> <span className="ms-2">Change Password</span>
+              </Link>
               <div className="dropdown-divider"></div>
-              <a href="./settings.html" className="dropdown-item">
-                Settings
-              </a>
-              <a href="/#" onClick={onLogout} className="dropdown-item">
-                Logout
+              <Link href="/dashboard/profile/setting" className="dropdown-item">
+                <Setting /> <span className="ms-2">Settings</span>
+              </Link>
+              <a href="#" onClick={onLogout} className="dropdown-item">
+                <Logout /> <span className="ms-2">Logout</span>
               </a>
             </div>
           </div>
