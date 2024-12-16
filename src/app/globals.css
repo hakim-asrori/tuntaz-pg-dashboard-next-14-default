@@ -1,9 +1,9 @@
 /* CSS Vendor Template Tabler */
-@import "../../node_modules/@tabler/core/dist/css/tabler.css";
-@import "../../node_modules/@tabler/core/dist/css/tabler-flags.css";
-@import "../../node_modules/@tabler/core/dist/css/tabler-payments.css";
-@import "../../node_modules/@tabler/core/dist/css/tabler-vendors.css";
-@import "../../node_modules/@tabler/core/dist/css/demo.css";
+@import "../_assets/css/tabler.css";
+/* @import "../_assets/css/tabler-flags.css"; */
+/* @import "../_assets/css/tabler-payments.css"; */
+@import "../_assets/css/tabler-vendors.css";
+@import "../_assets/css/demo.css";
 @import "../../node_modules/react-toastify/dist/ReactToastify.css";
 
 @import url("https://rsms.me/inter/inter.css");
